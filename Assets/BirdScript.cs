@@ -21,12 +21,20 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
+           if (Input.touchCount > 0 && birdAlive)
+           {
+                birdRigidBody.velocity = Vector2.up * flapStrength;
+                birdFlapSound.Play();
+           }
+        */
+            
            if (Input.GetKeyDown(KeyCode.Space) && birdAlive)
            {
                 birdRigidBody.velocity = Vector2.up * flapStrength;
                 birdFlapSound.Play();
            }
-           
+          
            if(transform.position.y > topScreen || transform.position.y < botScreen)
            {
                 gameOver();
