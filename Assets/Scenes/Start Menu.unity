@@ -599,7 +599,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Spacebar to fly!
+  m_Text: Use your voice to fly!
 --- !u!222 &1126085365
 CanvasRenderer:
   m_ObjectHideFlags: 0

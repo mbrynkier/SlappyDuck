@@ -10,6 +10,7 @@ public class LogicScript : MonoBehaviour
     public int highScore = 0;
     public Text scoreText;
     public Text highScoreText;
+    public Text microphoneText;
     public GameObject gameOverScreen;
     public bool gameOverBool = false;
     private AudioSource squeackSound;
@@ -47,5 +48,10 @@ public class LogicScript : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void setMicrophoneText(string text)
+    {
+        microphoneText.text = text;
     }
 }
