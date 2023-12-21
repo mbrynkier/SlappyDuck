@@ -92,7 +92,7 @@ public class BirdScript : MonoBehaviour
         }
         vals /= 128.0f;        
         
-        if (vals*20.0f>valorIfMicrofono)
+        if (vals*20.0f>valorIfMicrofono && birdAlive)
         {            
             birdRigidBody.velocity = Vector2.up * flapStrength;    
         }
