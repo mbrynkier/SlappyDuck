@@ -54,4 +54,10 @@ public class LogicScript : MonoBehaviour
     {
         microphoneText.text = text;
     }
+
+    public void restarRecord()
+    {
+        PlayerPrefs.SetInt("HighScore", 0);
+        highScoreText.text = "Record: 0";
+    }
 }
