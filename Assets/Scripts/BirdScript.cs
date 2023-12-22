@@ -17,6 +17,7 @@ public class BirdScript : MonoBehaviour
     AudioSource audioSource;
     public string selectedDevice; // Default Mic
     public static float[] samples = new float[128]; // Block for audioSource.GetOutputData()
+
     // Start is called before the first frame update
     void Start()
     {
