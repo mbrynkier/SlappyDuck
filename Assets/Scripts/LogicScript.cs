@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class LogicScript : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class LogicScript : MonoBehaviour
         squeackSound.Play();
         gameOverScreen.SetActive(true);
         gameOverBool = true;
+        Debug.Log("playerScore" + playerScore);
+        Debug.Log("highScore" + highScore);
         if (playerScore > highScore)
         {
             PlayerPrefs.SetInt("HighScore", playerScore);        
@@ -57,7 +60,8 @@ public class LogicScript : MonoBehaviour
 
     public void restarRecord()
     {
-        PlayerPrefs.SetInt("HighScore", 0);
+        playerScore = 0;
+        PlayerPrefs.SetInt("HighScore", playerScore);
         highScoreText.text = "Record: 0";
     }
 }
